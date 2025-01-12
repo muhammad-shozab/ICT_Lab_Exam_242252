@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="Harvard-style webpage with transparent header and hero" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Harvard-Style Webpage</title>
+
+  <!-- Fonts (Crimson Text for headings, Roboto for body) -->
+  <link href="/CanelaDeck-Bold-Trial.otf">
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- HEADER (transparent) -->
+  <header class="site-header">
+    <!-- Left: Harvard Shield + Name -->
+    <div class="header-left">
+      <a href="#" class="harvard-brand" aria-label="Harvard University Home">
+        <!-- If you do not have permission to use the shield, use your own or a placeholder -->
+        <img
+          src="/Logo.png"
+          alt="Harvard Shield"
+          class="harvard-shield"
+        />
+      </a>
+    </div>
+    <!-- Right: Black box with Search + Menu -->
+    <div class="header-right">
+      <a href="#" class="header-link">
+        <!-- Search Icon (SVG) -->
+        <span class="icon">
+          <svg
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </span>
+        <span>Search</span>
+      </a>
+      <a href="#" class="header-link">
+        <!-- Menu (Hamburger) Icon (SVG) -->
+        <span class="icon">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <line x1="3" y1="6"  x2="21" y2="6"></line>
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </span>
+        <span>Menu</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero-section">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>Resolutions</h1>
+      <p>
+        Whether you want to make small improvements to your lifestyle or treat yourself to some useful knowledge, the Harvard
+        community can help you start something new this year.
+      </p>
+    </div>
+  </section>
+
+  <!-- MAIN CONTENT -->
+  <main>
+    <!-- Featured Articles Section -->
+<section class="featured-articles">
+    <div class="container articles-grid">
+      <!-- Article 1 -->
+      <article class="article-card">
+        <div class="article-image">
+          <img src="https://www.harvard.edu/wp-content/uploads/2021/11/book-2562345-copy-1536x1024-1.jpeg?w=1536&h=1024&crop=1" alt="Keeping Your Resolution">
+        </div>
+        <div class="article-text">
+          <p class="section-label">BEFORE YOU CHOOSE</p>
+          <h2>A Guide to Keeping Your Resolution</h2>
+          <p>Moving forward, even slowly, puts your goals within reach.</p>
+          <a href="#" class="arrow-link">Learn more about sticking to resolutions</a>
+        </div>
+      </article>
+  
+      <!-- Article 2 -->
+      <article class="article-card2">
+        <div class="article-image2">
+          <img src="https://www.harvard.edu/wp-content/uploads/2024/12/020123_Waldinger_004b.jpg?w=624&h=624&crop=1" alt="Robert Waldinger">
+        </div>
+        <div class="article-text2">
+          <blockquote>
+            If you have a motivation to change, a conscious motivation, you’re more likely to take steps that are hard and require persistence.
+          </blockquote>
+          <p class="author2">Robert Waldinger</p>
+          <p class="author-credentials2">
+            Professor of psychiatry at Harvard Medical School and director of the Harvard Study on Adult Development, one of the longest-running studies on human happiness and wellbeing
+          </p>
+          <div class="podcast-wrapper2">
+            <audio controls>
+              <source src="audio-sample.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
+          </div>
+          <a href="#" class="arrow-link2">Learn more about change from the “Harvard Thinking” podcast ------>></a>
+        </div>
+      </article>
+    </div>
+  </section>
+  
+
+    <!-- Online Courses -->
+    <section class="online-courses">
+      <div class="container">
+        <h2>Take a free online course</h2>
+        <p class="subheading">
+          Be part of the Harvard community from anywhere in the world with our online courses.
+        </p>
+        <div class="courses-grid">
+          <!-- Course 1 -->
+          <div class="course-card">
+            <img src="https://pll.harvard.edu/sites/default/files/styles/16_9_medium/public/course/CS50x_pll.png?itok=PJhUTe4g" alt="CS50 Banner">
+            <div class="course-info">
+              <p class="course-label">Free Course</p>
+              <h3>CS50</h3>
+              <p class="para">Introduction to Computer Science</p>
+              <span class="availability">Available now</span>
+            </div>
+          </div>
+          <!-- Course 2 -->
+          <div class="course-card">
+            <img src="https://pll.harvard.edu/sites/default/files/styles/16_9_medium/public/2023-05/PLL%20Site%20%20Course%20Image%20File%20building%20personal%20resilience%20harvard%20online%20Specs%20530x300-2.png?itok=Sz4sc1eW" alt="Building Personal Resilience Banner">
+            <div class="course-info">
+              <p class="course-label">Free Course</p>
+              <h3>Building Personal Resilience</h3>
+              <p class="para">Managing Anxiety and Mental Health</p>
+              <span class="availability">Available now</span>
+            </div>
+          </div>
+          <!-- Course 3 -->
+          <div class="course-card">
+            <img src="https://pll.harvard.edu/sites/default/files/styles/16_9_medium/public/course/Fermentation_Image.jpeg?itok=g5aQoV1Q" alt="Food Fermentation">
+            <div class="course-info">
+              <p class="course-label">Free Course</p>
+              <h3>Food Fermentation</h3>
+              <p class="para">The Science of Cooking with Microbes</p>
+              <span class="availability">Available now</span>
+            </div>
+          </div>
+      </div>
+    </section>
+    <section class="online-courses">
+      <div class="container">
+        <div class="courses-grid">
+          <!-- Course 1 -->
+          <div class="course-card">
+            <img src="https://pll.harvard.edu/sites/default/files/styles/16_9_medium/public/course/backyard-meteorology.jpg?itok=C-S-VWQK" alt="CS50 Banner">
+            <div class="course-info">
+              <p class="course-label">Free Course</p>
+              <h3>Backyard Meteorology</h3>
+              <p class="para">The Science of Weather</p>
+              <span class="availability">Available now</span>
+            </div>
+          </div>
+          <!-- Course 2 -->
+          <div class="course-card">
+            <img src="https://developerzohaib786.github.io/harvard-clone/unabridged.jpg">
+            <div class="course-info">
+              <p class="course-label">Free Course</p>
+              <h3>Unabridged On Demand</h3>
+              <p class="para">Better understand academic research</p>
+              <span class="availability">Available now</span>
+            </div>
+          </div>
+          <!-- Course 3 -->
+          <div class="course-card">
+            <img src="https://developerzohaib786.github.io/harvard-clone/people.jpg" alt="Food Fermentation">
+            <div class="course-info">
+              <p class="course-label">Free Course</p>
+              <h3>We the People</h3>
+              <p class="para">Civic Engagement in a Constitutional Democracy</p>
+              <span class="availability">Available now</span>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="arrow-link">Explore more online courses</a>
+      </div>
+    </section>
+
+    <!---Mental Health Section--->
+    <div class="page-wrapper">
+      <!-- Left Column -->
+      <div class="left-column">
+          <h1>Concentrate on mental health</h1>
+          <div class="intro-text">
+              Whether you're looking to <a href="#">better understand food</a>, learn how to <a href="#">get more sleep</a>, or explore the <a href="#">latest studies on exercise</a>, the Harvard community has the research and resources to help.
+          </div>
+
+          <button class="learn-more-btn">
+              <span>Learn more about healthy living</span>
+              <svg viewBox="0 0 24 24" class="arrow-icon">
+                  <circle cx="12" cy="12" r="11" fill="#4a4a4a"/>
+                  <path d="M9 12h6m-2 -3l3 3-3 3" stroke="white" fill="none" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+          </button>
+
+          <div class="image-container">
+              <img src="https://www.harvard.edu/wp-content/uploads/2024/12/080620_yogab.jpg?w=616" alt="Group of people hiking on a forest trail">
+          </div>
+      </div>
+
+      <!-- Right Column -->
+      <div class="right-column">
+          <h2 class="main-heading">Try a mindfulness exercise today</h2>
+
+          <div class="exercise-type">
+              <h3>Sit</h3>
+              <p>Good exercise for people just starting their routine</p>
+              <a href="#">Learn more about this accessible way to stay active</a>
+          </div>
+
+          <div class="exercise-type">
+              <h3>Focus</h3>
+              <p>Perfect exercise for people looking for mind and body benefits</p>
+              <a href="#">Learn more about this 5,000-year-old way to stay active</a>
+          </div>
+
+          <div class="exercise-type">
+              <h3>Expand</h3>
+              <p>Fun exercise for people wanting to practice their moves</p>
+              <a href="#">Learn more about staying active to a beat</a>
+          </div>
+
+          <div class="exercise-type">
+              <h3>Emberace</h3>
+              <p>Great exercise for people without a lot of time</p>
+              <a href="#">Learn more about this quick and powerful way to stay active</a>
+          </div>
+      </div>
+  </div>
+
+
+
+<<!-- READING SECTION -->
+<section class="reading-section">
+  <div class="container">
+      <div class="reading-header">
+          <h2>Read an engaging book</h2>
+          <a href="#" class="arrow-link">See All Books</a>
+      </div>
+      <div class="reading-grid">
+          <!-- Book 1 -->
+          <div class="reading-card">
+              <img src="https://news.harvard.edu/wp-content/uploads/2024/07/Book-cover-Power-Broker.png" alt="Book 1">
+              <p>Harvard Business School recommendations</p>
+          </div>
+          <!-- Book 2 -->
+          <div class="reading-card">
+              <img src="https://college.harvard.edu/sites/default/files/styles/max_800_x_985/public/2023-09/Screenshot%202023-09-03%20at%2012.16.54%20AM.png?itok=4hoquGJ2" alt="Book 2">
+              <p>Harvard College student recommendations</p>
+          </div>
+          <!-- Book 3 -->
+          <div class="reading-card">
+              <img src="https://www.gsd.harvard.edu/wp-content/uploads/2024/06/Design-by-Fire-212x300.jpg" alt="Book 3">
+              <p>Harvard School of Design recommendations</p>
+          </div>
+          <!-- Book 4 -->
+          <div class="reading-card">
+              <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1347851779i/887089.jpg" alt="Book 4">
+              <p>Harvard School of Education recommendations</p>
+          </div>
+          <!-- Book 5 -->
+          <div class="reading-card">
+              <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1601177596i/10697182.jpg" alt="Book 5">
+              <p>Harvard Divinity School recommendations</p>
+          </div>
+          <!-- Book 6 -->
+          <div class="reading-card">
+              <img src="https://m.media-amazon.com/images/I/51DEEFvHSxL._SY445_SX342_.jpg" alt="Book 6">
+              <p>The Salata Institute recommendations</p>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+<div class="page-wrapper">
+  <!-- Left Column -->
+  <div class="left-column">
+      <h1>Focus on physical health</h1>
+      <div class="intro-text">
+          Whether you're looking to <a href="#">better understand food</a>, learn how to <a href="#">get more sleep</a>, or explore the <a href="#">latest studies on exercise</a>, the Harvard community has the research and resources to help.
+      </div>
+
+      <button class="learn-more-btn">
+          <span>Learn more about healthy living</span>
+          <svg viewBox="0 0 24 24" class="arrow-icon">
+              <circle cx="12" cy="12" r="11" fill="#4a4a4a"/>
+              <path d="M9 12h6m-2 -3l3 3-3 3" stroke="white" fill="none" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+      </button>
+
+      <div class="image-container">
+          <img src="https://www.harvard.edu/wp-content/uploads/2024/12/AdobeStock_537186660.jpeg?w=1152" alt="Group of people hiking on a forest trail">
+      </div>
+  </div>
+
+  <!-- Right Column -->
+  <div class="right-column">
+      <h2 class="main-heading">Starting can be as simple as finding the right form of exercise</h2>
+
+      <div class="exercise-type">
+          <h3>Walking</h3>
+          <p>Good exercise for people just starting their routine</p>
+          <a href="#">Learn more about this accessible way to stay active</a>
+      </div>
+
+      <div class="exercise-type">
+          <h3>Yoga</h3>
+          <p>Perfect exercise for people looking for mind and body benefits</p>
+          <a href="#">Learn more about this 5,000-year-old way to stay active</a>
+      </div>
+
+      <div class="exercise-type">
+          <h3>Dance</h3>
+          <p>Fun exercise for people wanting to practice their moves</p>
+          <a href="#">Learn more about staying active to a beat</a>
+      </div>
+
+      <div class="exercise-type">
+          <h3>High-intensity interval training</h3>
+          <p>Great exercise for people without a lot of time</p>
+          <a href="#">Learn more about this quick and powerful way to stay active</a>
+      </div>
+  </div>
+</div>
+
+<!-- PODCAST SECTION -->
+<section class="podcast-section">
+  <div class="container">
+      <h2>Subscribe to an informative podcast</h2>
+      <div class="podcast-row">
+          <div class="podcast-info">
+              <h3>Harvard Thinking</h3>
+              <p>
+                Experts from different disciplines converse about issues that affect people in real, tangible ways.
+              </p>
+          </div>
+          <div class="podcast-logo">
+              <img src="https://news.harvard.edu/wp-content/uploads/2024/01/Gazette_HT_Podcast_banner.jpg?resize=768,509"alt="Podcast Logo">
+          </div>
+      </div>
+      <hr>
+      <div class="podcast-row">
+          <div class="podcast-info">
+              <h3>HBR IdeaCast</h3>
+              <p>
+                Learn the latest from leading thinkers in business and management.
+              </p>
+          </div>
+          <div class="podcast-logo">
+              <img src="https://is1-ssl.mzstatic.com/image/thumb/Podcasts211/v4/28/4b/4e/284b4e44-9a28-dabf-e853-e60c43e380ad/mza_6581779795008535928.jpg/300x300bb.webp" alt="Podcast Logo">
+          </div>
+      </div>
+      <hr>
+      <div class="podcast-row">
+        <div class="podcast-info">
+            <h3>Design Now</h3>
+            <p>
+              Faculty, researchers, alumni, and students illuminate the many ways in which design is engaged in questions of global politics, culture, and society.
+            </p>
+        </div>
+        <div class="podcast-logo">
+            <img src="https://www.gsd.harvard.edu/wp-content/uploads/2021/12/Design-Now-Logo-1.jpg"alt="Podcast Logo">
+        </div>
+    </div>
+    <hr>
+    <div class="podcast-row">
+      <div class="podcast-info">
+          <h3>Harvard EdCast</h3>
+          <p>
+            Leading scholars, researchers, and experts explore evidence-based policy solutions to the big problems we face in our society and our world.
+          </p>
+      </div>
+      <div class="podcast-logo">
+          <img src="https://is1-ssl.mzstatic.com/image/thumb/Podcasts115/v4/3e/7f/6d/3e7f6d5f-3e01-a4ab-a432-33dba59fd8f7/mza_5641550294494771998.jpg/300x300bb.webp"alt="Podcast Logo">
+      </div>
+  </div>
+      <hr>
+      <div class="podcast-row">
+          <div class="podcast-info">
+              <h3>PolicyCast</h3>
+              <p>
+                Leading scholars, researchers, and experts explore evidence-based policy solutions to the big problems we face in our society and our world.
+              </p>
+          </div>
+          <div class="podcast-logo">
+              <img src="https://is1-ssl.mzstatic.com/image/thumb/Podcasts115/v4/ce/b9/36/ceb936e0-5eb9-8eb3-043a-63afb27d5b4a/mza_9077412728075091971.jpg/300x300bb.webp"alt="Podcast Logo">
+          </div>
+      </div>
+      <hr>
+      <div class="podcast-row">
+        <div class="podcast-info">
+            <h3>Hope Podcast</h3>
+            <p>
+              Expand your understanding of the ways religion shapes the world with lectures, interviews, and reflections.
+            </p>
+        </div>
+        <div class="podcast-logo">
+            <img src="https://is1-ssl.mzstatic.com/image/thumb/Podcasts211/v4/a6/e6/06/a6e60663-9e3f-266b-4f63-6be2de32d6f3/mza_5725503864981554982.jpg/300x300bb.webp"alt="Podcast Logo">
+        </div>
+    </div>
+    <hr>
+    <div class="podcast-row">
+      <div class="podcast-info">
+          <h3>Colloquy Podcast</h3>
+          <p>
+            Conversations with visionary scholars and thinkers from the Harvard PhD community.
+          </p>
+      </div>
+      <div class="podcast-logo">
+          <img src="https://i.scdn.co/image/ab6765630000ba8ad424c59a3500822b0d60d2c9"alt="Podcast Logo">
+      </div>
+  </div>
+  <hr>
+  <div class="podcast-row">
+    <div class="podcast-info">
+        <h3>BornCurioust</h3>
+        <p>
+          Scholars, students, artists, and doers converse about current affairs, scientific breakthroughs, cutting-edge research, art making, and storytelling.
+        </p>
+    </div>
+    <div class="podcast-logo">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPV1KktvCv1VRIscpsswiM6ZtX2qe9WLoocw&s"alt="Podcast Logo">
+    </div>
+</div>
+<hr>
+      <!-- Add more podcast rows as needed -->
+  </div>
+</section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="main-footer">
+    <div class="footer-content">
+        <nav class="footer-navigation">
+            <div class="footer-column">
+                <h2>Security & Brand</h2>
+                <ul>
+                    <li><a href="#">Report Copyright Infringement</a></li>
+                    <li><a href="#">Report Security Issue</a></li>
+                    <li><a href="#">Trademark Notice</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h2>Website</h2>
+                <ul>
+                    <li><a href="#">Accessibility</a></li>
+                    <li><a href="#">Digital Accessibility</a></li>
+                    <li><a href="#">Privacy Statement</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h2>Get In Touch</h2>
+                <ul>
+                    <li><a href="#">Contact Harvard</a></li>
+                    <li><a href="#">Maps & Directions</a></li>
+                    <li><a href="#">Jobs</a></li>
+                </ul>
+            </div>
+        </nav>
+        
+        <div class="footer-bottom">
+            <div class="copyright">
+                Copyright © 2025 The President and Fellows of Harvard College
+            </div>
+            <div class="harvard-logo">
+                <img src="https://www.harvard.edu/wp-content/themes/core/assets/img/theme/branding-assets/footer-logo.svg" width="1600%" alt="Harvard Logo">
+                
+            </div>
+            <div class="social-links">
+                <a href="#" aria-label="Instagram">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
+                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                    </svg>
+                </a>
+                <a href="#" aria-label="TikTok">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
+                        <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/>
+                    </svg>
+                </a>
+                <a href="#" aria-label="LinkedIn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
+                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                    </svg>
+                </a>
+                <a href="#" aria-label="Facebook">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
+                        <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/>
+                    </svg>
+                </a>
+                <a href="#" aria-label="YouTube">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
+                        <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html

@@ -1,0 +1,924 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Canela Deck Family';
+    color: #333;
+    background-color: #F3F4F4;
+}
+
+/* Utility container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* HEADER (Transparent) */
+.site-header {
+    position: absolute;  /* so it floats on hero */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background: transparent;  /* transparent so hero image is visible behind */
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.harvard-brand {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #000;
+}
+
+.harvard-shield {
+    height: 70px;
+    margin-right: 0.8rem;
+}
+
+.harvard-text {
+    font-size: 0.9rem;
+    font-weight: 700;
+    line-height: 1.1;
+    color: #000;
+    white-space: nowrap;
+}
+
+.header-right {
+    display: inline-flex;
+    align-items: center;
+    background: #000;  /* black box for Search/Menu */
+    padding: 0.3rem 1rem;
+    height: 100px;
+    width: 20%;
+    margin-right: -15px;
+}
+
+.header-link {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 1.5rem;
+}
+
+.header-link .icon {
+    display: inline-flex;
+    margin-right: 0.3rem;
+}
+
+/* HERO SECTION */
+.hero-section {
+    position: relative;
+    color: #fff;
+    width: 100%;
+    height: 600px;
+    background: url("/colleagues-thinking-new-project.jpg")
+      center/cover no-repeat;
+    /* Replace with your actual hero image */
+    overflow: hidden;
+}
+
+.hero-section::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.548);
+    z-index: 0;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    text-align: center;
+    color: #1E1E1E;
+}
+
+.hero-content h1 {
+    font-family: Canela Deck Web !important;
+    font-size: 6rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    max-width: 600px;
+    font-size: 1.2rem;
+    line-height: 1.4;
+    margin: 0 auto;
+}
+
+/* FEATURED ARTICLES */
+.featured-articles {
+    padding: 3rem 0;
+    background: #F3F4F4;
+}
+
+.articles-grid {
+    display: flex;
+    flex-direction: column; /* Stack articles vertically */
+    gap: 2.2rem;
+    justify-content: center; /* Center the articles */
+}
+
+.article-card {
+    background: #F3F4F4;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    width: 100%; /* Full width for vertical stacking */
+}
+
+.article-image img {
+    width: 550px;
+    height: auto;
+    display: block;
+}
+
+.article-text {
+    font-size: 1.2rem;
+    padding: 1.5rem;
+    padding-left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    color: #000;
+}
+
+.section-label {
+    font-family: Canela Deck Web;
+    font-size: 1.0rem;
+    color: #050203; /* Harvard Crimson */
+    letter-spacing: 1px;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.article-text h2 {
+    font-family: Canela Deck Web;
+    font-size: 48px;
+    margin-bottom: 1rem;
+    color: #000;
+    font-weight: 20;
+    
+}
+
+.article-text p {
+    font-size: 1.0rem;
+    color: #0a0808;
+    margin-bottom: 1.5rem;
+}
+
+.arrow-link {
+    align-self: flex-start;
+    color: #000000;
+    text-decoration: none;
+    font-weight: 500;
+    position: relative;
+}
+
+
+
+.author {
+    font-weight: bold;
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: #333;
+}
+
+.author-credentials {
+    font-size: 1rem;
+    color: #666;
+    margin-top: 0.1rem;
+}
+
+.podcast-wrapper {
+    margin-top: 1rem;
+}
+
+
+/* FEATURED ARTICLES */
+.featured-articles2 {
+    padding: 3.4rem;
+    background: #F3F4F4;
+}
+
+.articles-grid2 {
+    display: flex;
+    flex-direction: column-reverse; /* Stack articles vertically */
+    gap: 2rem;
+    justify-content: center; /* Center the articles */
+}
+
+.article-card2 {
+    background: #F3F4F4;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%; /* Full width for vertical stacking */
+
+
+
+
+
+
+}
+
+.article-image2 img {
+    width: 500px;
+    height: auto;
+    display: block;
+}
+
+.article-text2 {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.section-label2 {
+    font-size: 0.9rem;
+    color: #A51C30; /* Harvard Crimson */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.article-text2 h2 {
+    font-family: 'Crimson Text', serif;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #000;
+}
+
+.article-text2 p {
+    font-size: 1rem;
+    color: #000000;
+    margin-bottom: 1.5rem;
+}
+
+.arrow-link2 {
+    align-self: flex-start;
+    color: #000000;
+    text-decoration: none;
+    font-weight: 500;
+    position: relative;
+}
+
+
+
+.author2 {
+    font-weight: bold;
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: #000000;
+}
+
+.author-credentials2 {
+    font-size: 0.9rem;
+    color: #000000;
+    margin-top: 0.3rem;
+}
+
+.podcast-wrapper2 {
+    margin-top: 1rem;
+}
+blockquote {
+font-size: 50px;
+color: #000;
+font-family: Canela Deck Web;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: -.1px;
+    line-height: 1.15;
+
+}
+
+/* ONLINE COURSES */
+.online-courses {
+    background: #F3F4F4;
+    padding: 3rem 0;
+    padding-bottom: 0px;
+}
+
+.online-courses h2 {
+    font-family: 'Crimson Text', serif;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #1E1E1E;
+    font-weight: 25;
+}
+
+.subheading {
+
+    margin-bottom: 2rem;
+    color: #555;
+}
+
+.courses-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-bottom: 1rem;
+}
+
+.course-card {
+    background: #E3E5E5;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.course-card img {
+    display: block;
+    width: 100%;
+    height:250px;
+    overflow : hidden;
+    transition: 0.3s;
+
+
+}
+
+.course-card img:hover{
+    transform: scale(1.1);
+}
+
+
+.course-info {
+    padding: 1rem;
+}
+
+.course-label {
+    font-size: 0.9rem;
+    color: #000000;
+    margin-bottom: 0.3rem;
+    margin-top: 1.2rem;
+    margin-left: 1.3rem;
+}
+
+.course-card h3 {
+    font-family: 'Crimson Text', serif;
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    margin-left: 1.2rem;
+    color: #000;
+}
+
+.para {
+color: #000;
+margin-left: 1.2rem;
+padding-bottom: 5.5rem ;
+}
+
+
+
+.availability {
+    display: block;
+    margin-top: 0.5rem;
+    color: green;
+    font-weight: bold;
+    margin-left: 1.2rem;
+
+}
+
+.arrow-link{
+    color: #A51C30;
+
+}
+
+
+.page-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+}
+
+/* Left Column Styles */
+.left-column {
+    max-width: 600px;
+}
+
+h1 {
+    font-family: "Chronicle Display", Georgia, serif;
+    font-size: 48px;
+    font-weight: 500;
+    color: #1a1a1a;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.intro-text {
+    font-size: 18px;
+    margin-bottom: 24px;
+}
+
+.intro-text a {
+    color: #1a1a1a;
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+.learn-more-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #4a4a4a;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+
+.arrow-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.image-container {
+    margin-top: 20px;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+/* Right Column Styles */
+.right-column {
+    padding-top: 10px;
+}
+
+.main-heading {
+    font-family: "Chronicle Display", Georgia, serif;
+    font-size: 32px;
+    font-weight: 500;
+    color: #1a1a1a;
+    margin-bottom: 40px;
+    line-height: 1.2;
+}
+
+.exercise-type {
+    margin-bottom: 40px;
+}
+
+.exercise-type h3 {
+    font-family: "Chronicle Display", Georgia, serif;
+    font-size: 36px;
+    font-weight: 500;
+    color: #A51C30;
+    margin-bottom: 12px;
+    line-height: 1.2;
+}
+
+.exercise-type p {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.exercise-type a {
+    color: #1a1a1a;
+    text-decoration: underline;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+/* Arrow Link Styling */
+.arrow-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    text-decoration: none;
+    color: #A51C30; /* Harvard Crimson */
+    font-weight: 500;
+    position: relative;
+}
+
+.arrow-link::after {
+    content: "→";
+    margin-left: 0.3rem;
+    transition: transform 0.2s ease;
+}
+
+.arrow-link:hover::after {
+    transform: translateX(3px);
+}
+
+/* READING SECTION */
+.reading-section {
+    background: #F3F4F4
+}
+
+.reading-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    margin-left: 60px;
+}
+
+.reading-header h2 {
+    font-family: 'Crimson Text', serif;
+    font-size: 2rem;
+}
+
+.reading-header a.arrow-link {
+    color: #A51C30;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.reading-grid {
+    display: grid;
+    padding: 2.3rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.2rem;
+}
+
+.reading-card {
+    text-align: center;
+    background: #fafafa;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    transform: 0.3s;
+    overflow: hidden;
+    width: 250px;
+    margin: 20px;
+
+}
+
+
+
+
+.reading-card img {
+    margin-bottom: 1rem;
+    border-radius: 4px;
+    width: 100%;
+    transition: 0.3s;
+    overflow: hidden;
+}
+
+.reading-card img:hover{
+    transform: scale(1.04);
+}
+
+.reading-card p {
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+/* PODCAST SECTION */
+.podcast-section {
+    background: #F3F4F4;
+    padding: 3rem 0;
+
+}
+
+.podcast-section h2 {
+    font-family: 'Crimson Text', serif;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.podcast-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.podcast-info h3 {
+    font-family: 'Crimson Text', serif;
+    font-size: 1.2rem;
+    margin-bottom: 0.3rem;
+}
+
+.podcast-info p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.podcast-logo img {
+    display: block;
+    width: 120px;
+    border: 1px solid #eee;
+    border-radius: 4px;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 1rem 0;
+}
+
+
+/* FOOTER */
+.main-footer {
+    background-color: #0E0E0E;
+    padding: 3rem ;
+    color: #fff;
+    width: 100%;
+}
+
+.footer-content {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.footer-navigation {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 4rem;
+}
+
+.footer-column h2 {
+    color: #fff;
+    font-size: 0.995rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align:center;
+}
+
+.footer-column ul li a {
+    color: #8590A0;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.2s ease;
+}
+
+.footer-column ul li a:hover {
+    color: #fff;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.copyright {
+    color: #8590A0;
+    font-size: 0.875rem;
+}
+
+.harvard-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    gap: 0.5rem; 
+    width: 10px;
+    padding-bottom: 40px;
+}
+
+.social-links {
+    display: flex;
+    /* justify-content: flex-end; */
+    gap: 1.5rem;
+    
+}
+
+.social-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: opacity 0.2s ease;
+}
+
+.social-links a:hover {
+    opacity: 0.8;
+}
+
+.social-links svg {
+    width: 50px;
+    height: 50px;
+}
+
+@media (max-width: 768px) {
+    /* General adjustments */
+    .container {
+      width: 95%;
+      padding: 0 10px;
+    }
+  
+    /* Header adjustments */
+    .site-header {
+      height: 80px;
+      padding: 0.5rem;
+    }
+  
+    .header-left {
+      max-width: 60%;
+    }
+  
+    .harvard-shield {
+      height: 50px;
+    }
+  
+    .harvard-text {
+      font-size: 0.8rem;
+    }
+  
+    .header-right {
+      width: auto;
+      height: 80px;
+      padding: 0.5rem;
+    }
+  
+    .header-link span:not(.icon) {
+      display: none; /* Hide text, show only icons */
+    }
+  
+    /* Hero section adjustments */
+    .hero-section {
+      height: 800px;
+    }
+  
+    .hero-content {
+      width: 90%;
+    }
+  
+    .hero-content h1 {
+      font-size: 2.7rem;
+      margin-bottom: 0.5rem;
+    }
+  
+    .hero-content p {
+      font-size: 1.3rem;
+    }
+  
+    /* Featured articles adjustments */
+    .article-card, .article-card2 {
+      flex-direction: column;
+    }
+  
+    .article-image img, .article-image2 img {
+      width: 100%;
+      height: auto;
+    }
+  
+    .article-text, .article-text2 {
+      padding: 1rem;
+    }
+  
+    .article-text h2, .article-text2 h2 {
+      font-size: 1.8rem;
+    }
+  
+    blockquote {
+      font-size: 1.8rem;
+    }
+  
+    /* Courses grid adjustments */
+    .courses-grid {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+  
+    .course-card {
+      margin: 0 auto;
+      max-width: 100%;
+    }
+  
+    .course-card img {
+      height: 200px;
+      object-fit: cover;
+    }
+  
+    /* Reading section adjustments */
+    .reading-grid {
+      grid-template-columns: 1fr;
+      padding: 1rem;
+    }
+  
+    .reading-card {
+      width: 100%;
+      margin: 10px 0;
+    }
+  
+    /* Mental health section adjustments */
+    .page-wrapper {
+      grid-template-columns: 1fr;
+      padding: 20px;
+      gap: 30px;
+    }
+  
+    .left-column h1,
+    .right-column .main-heading {
+      font-size: 2rem;
+    }
+  
+    .exercise-type h3 {
+      font-size: 1.5rem;
+    }
+  
+    /* Podcast section adjustments */
+    .podcast-row {
+      flex-direction: column;
+      gap: 1rem;
+      text-align: center;
+    }
+  
+    .podcast-logo img {
+      width: 100%;
+      max-width: 200px;
+      margin: 0 auto;
+    }
+  
+    /* Footer adjustments */
+    .footer-navigation {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+      text-align: center;
+    }
+  
+    .footer-bottom {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+      text-align: center;
+    }
+  
+    .copyright {
+      order: 2;
+    }
+  
+    .harvard-logo {
+      order: 1;
+      width: 340px;
+    }
+  
+    .social-links {
+      order: 3;
+      justify-content: center;
+    }
+  }
+  
+  /* Additional breakpoint for extra small devices */
+  @media (max-width: 480px) {
+    .hero-content h1 {
+      font-size: 2rem;
+    }
+  
+    .article-text h2, .article-text2 h2 {
+      font-size: 1.5rem;
+    }
+  
+    .course-card h3 {
+      font-size: 1.2rem;
+    }
+  
+    .reading-card p {
+      font-size: 1rem;
+    }
+  
+    .footer-column h2 {
+      font-size: 1.2rem;
+    }
+  
+    .social-links {
+      gap: 1rem;
+    }
+  
+    .social-links svg {
+      width: 30px;
+      height: 30px;
+    }
+  }
